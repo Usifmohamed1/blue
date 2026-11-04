@@ -1,0 +1,338 @@
+.header {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 40;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(22px);
+  border-block-end: 1px solid var(--line);
+}
+.headerInner {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+.brandLink {
+  display: block;
+  flex-shrink: 0;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.nav a {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  padding-block: 10px;
+  transition: color 0.2s;
+  position: relative;
+}
+.nav a:hover,
+.nav a.active {
+  color: var(--ink);
+}
+.nav a.active:after {
+  content: '';
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-end: 0;
+  width: 14px;
+  height: 2px;
+  background: var(--cyan);
+  box-shadow: 0 0 10px var(--cyan);
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.language {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink);
+  font-size: 11px;
+  padding: 8px;
+}
+.navCta {
+  font-size: 10px;
+  min-height: 42px;
+  padding: 11px 17px;
+}
+.menuButton {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--line);
+  padding: 9px;
+  border-radius: 5px;
+}
+.main {
+  outline: none;
+  min-height: 100svh;
+}
+.skip {
+  position: fixed;
+  inset-block-start: 10px;
+  inset-inline-start: 20px;
+  background: var(--cyan);
+  color: var(--bg);
+  padding: 10px 20px;
+  z-index: 150;
+  transform: translateY(-200%);
+}
+.skip:focus {
+  transform: none;
+}
+.drawer {
+  position: fixed;
+  inset-block: 0;
+  inset-inline: auto 0;
+  max-height: 100dvh;
+  height: 100dvh;
+  width: min(390px, 100%);
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-inline-start: 1px solid var(--line);
+}
+.drawerContent {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background:
+    radial-gradient(
+      at 100% 40%,
+      color-mix(in srgb, var(--electric) 18%, transparent),
+      transparent 60%
+    ),
+    var(--bg);
+}
+.drawerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.close {
+  padding: 9px;
+  background: var(--bg2);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+}
+.mobileLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-block: 40px;
+  flex: 1;
+}
+.mobileLinks a {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.6;
+  border-block-end: 1px solid var(--line);
+  padding-block: 8px;
+}
+.mobileLinks .active {
+  color: var(--cyan);
+}
+.drawerNote {
+  font-size: 11px;
+  color: var(--muted);
+  margin-block-start: 23px;
+}
+.footer {
+  border-block-start: 1px solid var(--line);
+  padding-block: 65px 25px;
+  background: var(--bg2);
+}
+.footerTop {
+  display: grid;
+  grid-template-columns: 1.1fr 0.8fr 1.1fr;
+  gap: 65px;
+}
+.footerDescription {
+  font-size: 12px;
+  color: var(--muted);
+  margin-block-start: 22px;
+  max-width: 250px;
+}
+.footerNav > p,
+.footerSocial > p {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+  margin-block-end: 18px;
+  font-weight: 700;
+}
+.footerNav nav {
+  display: flex;
+  gap: 13px 28px;
+  flex-wrap: wrap;
+  max-width: 250px;
+}
+.footerNav a {
+  font-size: 11px;
+  color: var(--muted);
+}
+.footerNav a:hover {
+  color: var(--cyan);
+}
+.footerSocial a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  color: var(--cyan);
+}
+.footerSocial > span {
+  font-size: 10px;
+  color: var(--muted);
+  display: block;
+  margin-block-start: 20px;
+}
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  border-block-start: 1px solid var(--line);
+  padding-block-start: 25px;
+  margin-block-start: 45px;
+  font-size: 9px;
+  color: var(--muted);
+}
+.footerBottom > span:nth-child(2) {
+  max-width: 550px;
+  font-size: 9px;
+}
+.footerBottom > a {
+  color: var(--cyan);
+}
+.up {
+  transform: rotate(180deg);
+}
+.floating {
+  position: fixed;
+  inset-inline-end: 22px;
+  inset-block-end: 22px;
+  background: var(--cyan);
+  color: var(--bg);
+  border-radius: 50%;
+  width: 49px;
+  height: 49px;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 25px color-mix(in srgb, var(--cyan) 25%, transparent);
+  z-index: 25;
+  transition: transform 0.2s;
+}
+.floating:hover {
+  transform: translateY(-4px);
+}
+@media (max-width: 1050px) {
+  .headerInner {
+    gap: 20px;
+  }
+  .nav {
+    gap: 19px;
+  }
+  .actions {
+    gap: 13px;
+  }
+  .nav a {
+    font-size: 10px;
+  }
+  .navCta {
+    padding-inline: 12px;
+  }
+}
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+  .menuButton {
+    display: block;
+  }
+  .headerInner {
+    height: 80px;
+  }
+  .footerTop {
+    gap: 35px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footerSocial {
+    grid-column: 1/-1;
+  }
+  .footerSocial a {
+    max-width: 300px;
+  }
+  .footerBottom {
+    gap: 20px;
+  }
+  .footerBottom > span:nth-child(2) {
+    max-width: 360px;
+  }
+}
+@media (max-width: 600px) {
+  .headerInner {
+    height: 73px;
+    gap: 12px;
+  }
+  .navCta {
+    display: none;
+  }
+  .actions {
+    gap: 12px;
+  }
+  .language {
+    font-size: 10px;
+    padding: 6px;
+    gap: 6px;
+  }
+  .menuButton {
+    padding: 8px;
+  }
+  .footer {
+    padding-block: 45px 22px;
+  }
+  .footerTop {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .footerSocial {
+    grid-column: auto;
+  }
+  .footerDescription {
+    margin-block-start: 16px;
+  }
+  .footerNav > p,
+  .footerSocial > p {
+    margin-block-end: 12px;
+  }
+  .footerNav nav {
+    max-width: none;
+  }
+  .footerBottom {
+    flex-wrap: wrap;
+    margin-block-start: 30px;
+    padding-block-start: 20px;
+    gap: 15px;
+  }
+  .footerBottom > span:nth-child(2) {
+    order: 3;
+    max-width: 90%;
+  }
+  .floating {
+    width: 43px;
+    height: 43px;
+    inset-inline-end: 15px;
+    inset-block-end: 15px;
+  }
+}

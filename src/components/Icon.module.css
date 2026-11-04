@@ -1,0 +1,9 @@
+.icon {
+  flex-shrink: 0;
+}
+.directional {
+  transition: transform 0.25s;
+}
+:global([dir='rtl']) .directional {
+  transform: rotate(180deg);
+}

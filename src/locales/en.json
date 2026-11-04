@@ -1,0 +1,640 @@
+{
+  "common": {
+    "brand": "BLUE",
+    "tagline": "YOUR CREATIVE PARTNER",
+    "loading": "Getting the ideas ready…",
+    "skip": "Skip to content",
+    "concept": "Creative concept",
+    "readMore": "Read the story",
+    "viewAll": "Explore all",
+    "back": "Go back",
+    "close": "Close",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "languageToggle": "Change language",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "email": "Email",
+    "contact": "Start a conversation",
+    "logoLabel": "BLUE — Your Creative Partner, home",
+    "newTab": "Opens in a new tab",
+    "previous": "Previous",
+    "next": "Next",
+    "since": "Since {{year}}",
+    "demo": "Demonstration content",
+    "placeholder": "Replace before launch",
+    "arrow": "Continue",
+    "backToTop": "Back to top"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "work": "Work",
+    "about": "About",
+    "blog": "Journal",
+    "contact": "Contact",
+    "cta": "Tell us your idea",
+    "language": "العربية",
+    "menu": "Main navigation"
+  },
+  "footer": {
+    "description": "More than design. A partner in the impact.",
+    "links": "Explore",
+    "social": "Stay connected",
+    "copyright": "© {{year}} BLUE. All rights reserved.",
+    "note": "Creative concepts, team roles and testimonials are illustrative until replaced with approved material.",
+    "since": "Your creative partner since 2016.",
+    "location": "Egypt · City to be confirmed"
+  },
+  "home": {
+    "metaTitle": "BLUE — Your Creative Partner | More than design, it’s impact",
+    "metaDescription": "BLUE connects brand strategy, design, content, campaigns and websites. Your creative partner since 2016. Start a conversation about your next idea.",
+    "hero": {
+      "eyebrow": "INDEPENDENT THINKING. SHARED AMBITION.",
+      "line1": "MORE THAN DESIGN.",
+      "line2": "IT’S IMPACT.",
+      "description": "We’re not just a design studio. We’re your creative partner. From the first bold idea to the details people remember, we make your brand mean something.",
+      "cta": "Talk through your project",
+      "secondary": "Explore our creative work",
+      "scroll": "Step into BLUE",
+      "visualLabel": "The BLUE triangle logo assembling inside an electric-blue orbit",
+      "since": "YOUR CREATIVE PARTNER / SINCE 2016",
+      "gameOn": "GAME ON.",
+      "label": "Strategy × Creativity × Impact"
+    },
+    "marquee": "BRAND WITH PURPOSE. CREATE WITH IMPACT.",
+    "services": {
+      "eyebrow": "01 / WHAT WE BRING",
+      "title": "A clear idea.\nA complete creative toolkit.",
+      "description": "Six connected services. One brand that looks, sounds and feels like you.",
+      "cta": "Find the right service"
+    },
+    "statement": {
+      "eyebrow": "A PARTNER IN THE THINKING",
+      "line1": "WE’RE NOT JUST\nA DESIGN STUDIO.",
+      "line2": "WE’RE YOUR\nCREATIVE PARTNER.",
+      "description": "We ask what your business needs before deciding what it should look like. Then we connect strategy, design and content into one clear direction."
+    },
+    "work": {
+      "eyebrow": "02 / SELECTED CONCEPTS",
+      "title": "Made to stop\nthe scroll.",
+      "description": "Original visual concepts that show the way we think. A preview, not a claim of completed client work.",
+      "cta": "Explore every concept"
+    },
+    "process": {
+      "eyebrow": "03 / HOW WE BUILD IT",
+      "title": "Great ideas need\na clear next step.",
+      "description": "You bring the ambition. We bring a process that keeps the thinking, making and momentum connected.",
+      "items": {
+        "discover": {
+          "title": "Discover",
+          "description": "We listen, understand the business and audience, and find the question worth answering."
+        },
+        "strategy": {
+          "title": "Strategy",
+          "description": "We choose the message, creative direction and priorities before making the first asset."
+        },
+        "create": {
+          "title": "Create",
+          "description": "We turn the direction into design, words and motion, then refine the details together."
+        },
+        "grow": {
+          "title": "Grow",
+          "description": "We review the response, learn what matters and shape the next move with intention."
+        }
+      }
+    },
+    "counters": {
+      "since": "CREATIVE PARTNERS SINCE",
+      "services": "CONNECTED SERVICES",
+      "steps": "CLEAR STEPS"
+    },
+    "testimonials": {
+      "eyebrow": "04 / WORDS THAT MATTER",
+      "title": "Good work starts\nwith good partnership.",
+      "note": "Illustrative quotes — not real client testimonials. Replace with approved partner stories.",
+      "previous": "Previous quote",
+      "next": "Next quote",
+      "slide": "Quote {{current}} of {{total}}"
+    },
+    "faq": {
+      "eyebrow": "05 / BEFORE WE BEGIN",
+      "title": "Good questions.\nStraight answers.",
+      "description": "A little clarity before the first conversation."
+    },
+    "cta": {
+      "eyebrow": "YOUR NEXT MOVE",
+      "line1": "DON’T JUST POST.",
+      "line2": "CREATE A REASON\nTO STOP.",
+      "description": "Tell us what you’re building. Let’s find the idea that moves it forward.",
+      "button": "Tell us about your project"
+    }
+  },
+  "services": {
+    "metaTitle": "Services | BLUE — Strategy, design, content and digital",
+    "metaDescription": "Explore BLUE’s six creative services: identity, social content, social management, motion, advertising and websites. Choose a service and brief us on your project.",
+    "eyebrow": "OUR CREATIVE TOOLKIT",
+    "title": "Every touchpoint.\nOne clear voice.",
+    "description": "A logo, a post, a campaign or a website should all lead back to the same idea. Choose the support your brand needs now; we’ll connect it to the bigger picture.",
+    "deliverables": "What we can deliver",
+    "audience": "Built for",
+    "cta": "Brief us on {{service}}",
+    "subnav": "Jump to a service",
+    "note": "The scope is tailored to your brief. Final deliverables, timing and fees are agreed before work begins."
+  },
+  "work": {
+    "metaTitle": "Work & creative concepts | BLUE",
+    "metaDescription": "Explore BLUE’s conceptual brand identities, social campaigns, video directions and advertising artwork. Filter by discipline or search for an idea.",
+    "eyebrow": "ROOM FOR BOLD IDEAS",
+    "title": "Ideas with\na point of view.",
+    "description": "A collection of visual concepts. Different disciplines, the same belief: good creative work gives people a reason to notice.",
+    "search": "Search creative work",
+    "searchPlaceholder": "Search by project or discipline…",
+    "filters": {
+      "all": "All work",
+      "social": "Social",
+      "branding": "Branding",
+      "video": "Video",
+      "ads": "Ads"
+    },
+    "empty": "No concepts match that search. Try another word or explore all work.",
+    "count": "{{count}} concepts",
+    "conceptNote": "All work shown is conceptual, created for this demonstration. It does not represent completed client projects or verified results.",
+    "viewProject": "Explore the concept",
+    "reset": "Reset filters"
+  },
+  "caseStudy": {
+    "eyebrow": "A BLUE CREATIVE CONCEPT",
+    "brief": "The brief",
+    "challenge": "The challenge",
+    "approach": "The approach",
+    "results": "A direction worth testing",
+    "resultsNote": "Concept only. Metrics have not been measured; replace the dashes with verified client-approved results before launch.",
+    "gallery": "Inside the idea",
+    "close": "Close image gallery",
+    "next": "Next concept",
+    "previous": "Previous concept",
+    "back": "Back to all work",
+    "openImage": "Open image {{number}}",
+    "imageCount": "Image {{current}} of {{total}}",
+    "previousImage": "Previous image",
+    "nextImage": "Next image",
+    "conceptLabel": "Illustrative case study",
+    "scope": "Creative scope",
+    "client": "Project type"
+  },
+  "about": {
+    "metaTitle": "About BLUE | Your Creative Partner since 2016",
+    "metaDescription": "Meet the thinking behind BLUE: strategy and creativity working together since 2016. Explore our values, process and the roles behind the work.",
+    "eyebrow": "BLUE / SINCE 2016",
+    "title": "In your corner.\nFrom the first idea.",
+    "description": "A creative partner should understand the ambition behind your business, not just the next item on your to-do list.",
+    "storyTitle": "More than a studio.\nA shared direction.",
+    "story": "Since 2016, BLUE has stood for a simple belief: creativity matters when it helps a brand say something clearly. We bring strategy, design and content into the same conversation.",
+    "story2": "We work with businesses that care about what they’re building. We ask useful questions, explain our choices and make room for your perspective, so the final work feels like your brand at its clearest.",
+    "valuesTitle": "The way we show up.",
+    "values": [
+      {
+        "title": "Purpose before decoration",
+        "text": "Every visual choice should serve an idea and help someone understand the business."
+      },
+      {
+        "title": "Partnership over handover",
+        "text": "We share the thinking, welcome honest feedback and build the direction with you."
+      },
+      {
+        "title": "Clarity all the way through",
+        "text": "A useful scope, a clear process and straightforward communication make better creative work possible."
+      }
+    ],
+    "teamTitle": "Different skills.\nOne creative direction.",
+    "teamNote": "Demonstration role cards. Replace these with real team members, approved bios and portraits.",
+    "timelineTitle": "A beginning.\nA continuing conversation.",
+    "timeline": {
+      "start": {
+        "title": "The BLUE idea begins",
+        "text": "Your creative partner since 2016. Independent thinking, shared ambition."
+      },
+      "today": {
+        "title": "The next chapter is shared",
+        "text": "Today, we connect brand identity, social content, motion, campaigns and websites around one clear idea."
+      }
+    },
+    "cta": "Start a conversation with BLUE"
+  },
+  "contact": {
+    "metaTitle": "Contact BLUE | Let’s talk about your project",
+    "metaDescription": "Tell BLUE about your business, the service you need and your next idea. Send a project enquiry or start a conversation on Instagram.",
+    "eyebrow": "LET’S MAKE THE NEXT MOVE",
+    "title": "Got an idea?\nWe’re listening.",
+    "description": "You don’t need a finished brief. A clear ambition, a good question, or even a “what if” is enough to start.",
+    "formTitle": "Give us the short version.",
+    "detailsTitle": "Keep the conversation going.",
+    "instagram": "Instagram",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "location": "Location",
+    "missing": "Contact details coming soon",
+    "locationMissing": "Egypt · City to be confirmed",
+    "mapTitle": "Where we connect",
+    "mapNote": "Map placeholder — add the confirmed city and approved map before launch.",
+    "alternative": "Start a conversation with BLUE",
+    "instagramAlternative": "Until WhatsApp is configured, reach us on Instagram.",
+    "form": {
+      "name": "Your name",
+      "phone": "Phone number",
+      "email": "Email address",
+      "service": "What can we help with?",
+      "budget": "Estimated budget",
+      "message": "Tell us about your project",
+      "website": "Leave this field empty",
+      "namePlaceholder": "What should we call you?",
+      "phonePlaceholder": "+20 …",
+      "emailPlaceholder": "you@yourbusiness.com",
+      "messagePlaceholder": "What are you building, who is it for, and what would you like to change?",
+      "servicePlaceholder": "Choose a service",
+      "budgetPlaceholder": "Choose a range",
+      "budgets": {
+        "not-sure": "Let’s discuss it",
+        "under-10k": "Under EGP 10,000",
+        "10k-25k": "EGP 10,000–25,000",
+        "25k-50k": "EGP 25,000–50,000",
+        "50k-plus": "EGP 50,000+"
+      },
+      "submit": "Send your project brief",
+      "sending": "Sending your brief…",
+      "success": "Your brief has been sent. Thank you for sharing your idea with BLUE.",
+      "development": "Demo submission accepted locally. Email delivery is not configured yet; no email was sent.",
+      "error": "Your brief could not be sent. Please try again or contact us on Instagram.",
+      "rateLimited": "A few too many messages in a short time. Please wait and try again.",
+      "unavailable": "Message delivery is not configured yet. Please contact us on Instagram.",
+      "privacy": "We use these details to respond to your enquiry. Never include passwords, payment details or other sensitive information.",
+      "required": "This field is required.",
+      "nameError": "Enter a name with 2–100 characters.",
+      "phoneError": "Enter a phone number with 8–15 digits.",
+      "emailError": "Enter a valid email address.",
+      "serviceError": "Choose the service you’re interested in.",
+      "budgetError": "Choose an available budget range.",
+      "messageError": "Tell us a little more in 10–4,000 characters.",
+      "emailSubject": "A new project idea for BLUE",
+      "briefTitle": "My project brief",
+      "briefName": "Name",
+      "briefPhone": "Phone",
+      "briefEmail": "Email",
+      "briefService": "Service",
+      "briefBudget": "Budget",
+      "briefMessage": "Project idea"
+    }
+  },
+  "blog": {
+    "metaTitle": "The BLUE Journal | Ideas for clearer brands",
+    "metaDescription": "Practical thinking about brand identity, purposeful content and websites that connect. Read BLUE’s demonstration journal articles.",
+    "eyebrow": "NOTES FROM THE CREATIVE SIDE",
+    "title": "Good ideas\nstart with a question.",
+    "description": "Short reads on building a clearer brand, making useful content and giving your next digital touchpoint a purpose.",
+    "placeholder": "Demonstration journal articles — review, approve and replace publication dates before launch.",
+    "read": "Read the article",
+    "back": "Back to the journal",
+    "minutes": "{{count}} min read",
+    "related": "Keep the thinking going",
+    "byline": "BLUE / YOUR CREATIVE PARTNER",
+    "published": "Publication date",
+    "articleLabel": "Demonstration article"
+  },
+  "notFound": {
+    "metaTitle": "Page not found | BLUE",
+    "metaDescription": "This page is not here. Explore BLUE’s work or head back to the home page.",
+    "eyebrow": "404 / AN IDEA TO COME BACK TO",
+    "title": "Wrong turn.\nStill in good company.",
+    "description": "The page you’re looking for has moved, or this idea hasn’t taken shape yet. Let’s get you somewhere useful.",
+    "home": "Back to BLUE",
+    "work": "Explore our work"
+  },
+  "serviceItems": {
+    "branding": {
+      "title": "Brand identity & design",
+      "short": "A brand people recognize before they read your name.",
+      "description": "We turn a clear strategic idea into a distinctive visual language. From the logo and typography to the way your brand shows up in everyday moments, every piece is designed to belong together.",
+      "deliverables": [
+        "Brand discovery and positioning direction",
+        "Logo system and identity guidelines",
+        "Typography, color and graphic language",
+        "Packaging and essential brand applications"
+      ],
+      "audience": "New businesses finding their identity, and established brands ready for a clearer next chapter."
+    },
+    "social": {
+      "title": "Social media content",
+      "short": "Content is not filler. It’s your brand’s voice.",
+      "description": "We build content around something worth saying. Strategy, writing and design work together so your feed feels intentional, your message stays consistent and each post has a reason to exist.",
+      "deliverables": [
+        "Content pillars and creative direction",
+        "Monthly content planning",
+        "Social post and carousel design",
+        "Arabic and English copywriting"
+      ],
+      "audience": "Brands that need a stronger, more consistent story across their social channels."
+    },
+    "management": {
+      "title": "Social media management",
+      "short": "A connected presence, with someone watching the details.",
+      "description": "An active account needs more than a content calendar. We help organize publishing, keep the conversation aligned with your voice and turn observations into useful decisions for the next month.",
+      "deliverables": [
+        "Channel planning and publishing workflow",
+        "Scheduling and account coordination",
+        "Community response guidelines",
+        "Performance reviews and practical recommendations"
+      ],
+      "audience": "Busy teams that want a clear process and an accountable creative partner for their social presence."
+    },
+    "motion": {
+      "title": "Motion graphics & video",
+      "short": "Give the idea a rhythm people can feel.",
+      "description": "We use movement to make the message clearer. A short brand film, a product story or a simple animated identity can make the details easier to understand and harder to forget.",
+      "deliverables": [
+        "Creative concept and storyboard",
+        "Motion graphics and animated identity",
+        "Short-form video editing",
+        "Platform-ready exports and caption direction"
+      ],
+      "audience": "Brands with a story, product or service that benefits from showing rather than explaining."
+    },
+    "ads": {
+      "title": "Ad creatives & paid campaigns",
+      "short": "Stop the scroll. Start the right conversation.",
+      "description": "A useful campaign connects a clear offer with the right audience and creative. We build focused ideas, adapt the assets for each channel and review the response instead of treating launch as the finish line.",
+      "deliverables": [
+        "Campaign idea and creative messaging",
+        "Ad design and short-form variants",
+        "Campaign setup and audience planning",
+        "Reporting and creative iteration"
+      ],
+      "audience": "Businesses with a clear offer, a defined objective and room to test what works. Advertising spend is scoped separately."
+    },
+    "web": {
+      "title": "Websites & landing pages",
+      "short": "Turn attention into a clear next step.",
+      "description": "Your website should make it easy to understand your business and act on that interest. We connect structure, copy and visual design into a fast, responsive experience that works in Arabic and English.",
+      "deliverables": [
+        "Page structure and user journey",
+        "Responsive interface design",
+        "Website or campaign landing page development",
+        "Contact flows, basic SEO and launch checks"
+      ],
+      "audience": "Businesses building a first home online, refreshing a dated site or supporting a focused campaign."
+    }
+  },
+  "projectItems": {
+    "fika": {
+      "title": "FIKA / A taste of identity",
+      "client": "Concept café brand",
+      "category": "Brand identity",
+      "brief": "Create a café identity that feels like a small pause with a strong personality. This is a fictional brief created to demonstrate a visual direction.",
+      "challenge": "Make a familiar coffee moment feel distinctive without relying on the same cups, beans and handwritten clichés.",
+      "approach": "Start with generous geometric lettering. Give it a flexible rhythm, a confident electric-blue palette and a system that can move from a cup sleeve to a storefront.",
+      "results": "An adaptable concept identity across packaging, signage and social layouts. No commercial results have been measured.",
+      "poster": "FIKA",
+      "caption": "A LITTLE COFFEE. A DIFFERENT KIND OF ENERGY.",
+      "gallery": [
+        "FIKA identity concept overview with geometric lettering",
+        "FIKA packaging direction concept",
+        "FIKA brand system and social layout concept"
+      ],
+      "metrics": {
+        "reach": "Verified reach",
+        "engagement": "Verified engagement"
+      }
+    },
+    "pulse": {
+      "title": "PULSE / Find your rhythm",
+      "client": "Concept social campaign",
+      "category": "Social content",
+      "brief": "Build a social content system for a brand with something clear to say. The fictional campaign explores how a short message can become a recognizable visual beat.",
+      "challenge": "Keep a feed connected while giving each post enough freedom to feel fresh.",
+      "approach": "Pair oversized type with orbiting lines and deliberate contrast. Repeat the visual rhythm, not the exact same layout, so the content feels like one conversation.",
+      "results": "A conceptual content series with room for educational carousels, short statements and campaign announcements. Performance data is not available.",
+      "poster": "PULSE",
+      "caption": "GIVE YOUR PRESENCE A RHYTHM.",
+      "gallery": [
+        "PULSE campaign poster concept with expressive typography",
+        "PULSE social carousel detail concept",
+        "PULSE connected content system concept"
+      ],
+      "metrics": {
+        "reach": "Verified reach",
+        "engagement": "Verified engagement"
+      }
+    },
+    "motion": {
+      "title": "IN MOTION / Every second matters",
+      "client": "Concept brand film direction",
+      "category": "Video & motion",
+      "brief": "Imagine a short brand film that turns one geometric shape into a clear story. The displayed artwork is a static art-direction concept, not a finished video.",
+      "challenge": "Communicate energy and intention quickly, without overwhelming the message with effects.",
+      "approach": "Use a single triangle, a controlled glow and a sequence of deliberate changes in scale. Build a rhythm that lets the message land before the next movement begins.",
+      "results": "A concept storyboard and visual language ready to be tested in animation. No finished film or campaign performance is claimed.",
+      "poster": "IN MOTION",
+      "caption": "IDEAS DON’T STAND STILL.",
+      "gallery": [
+        "IN MOTION brand-film concept keyframe",
+        "IN MOTION storyboard detail concept",
+        "IN MOTION sequence and motion-system concept"
+      ],
+      "metrics": {
+        "reach": "Verified views",
+        "engagement": "Verified completion rate"
+      }
+    },
+    "form": {
+      "title": "FORM / An identity taking shape",
+      "client": "Concept design studio identity",
+      "category": "Brand identity",
+      "brief": "Create a visual identity for an imagined design studio that believes useful ideas can take many forms.",
+      "challenge": "Build a system with enough structure to be recognizable and enough freedom to keep exploring.",
+      "approach": "Let the triangle become a building block. Combine a restrained grid with bold letterforms, then use scale and negative space to create different expressions from the same ingredients.",
+      "results": "A concept identity system spanning editorial layouts, studio stationery and digital applications. It has not been commissioned by a real client.",
+      "poster": "FORM",
+      "caption": "GIVE YOUR IDEA A SHAPE.",
+      "gallery": [
+        "FORM studio identity concept overview",
+        "FORM editorial layout and type detail concept",
+        "FORM modular identity system concept"
+      ],
+      "metrics": {
+        "reach": "Verified reach",
+        "engagement": "Verified engagement"
+      }
+    },
+    "daily": {
+      "title": "DAILY / A reason to stop",
+      "client": "Concept advertising campaign",
+      "category": "Ad creatives",
+      "brief": "Develop a focused advertising direction for an imagined local business. One useful offer, expressed clearly enough to understand at a glance.",
+      "challenge": "Make the creative feel immediate without turning the message into noise.",
+      "approach": "Lead with the audience’s need, reduce the copy to one promise and give the next step a clear place in the layout. Explore variations that can be compared in a real campaign.",
+      "results": "A set of concept ad variants ready for briefing and controlled testing. No spend, conversions or return figures are available.",
+      "poster": "DAILY",
+      "caption": "NOT JUST ANOTHER POST.",
+      "gallery": [
+        "DAILY campaign hero-ad concept",
+        "DAILY short-message ad variation concept",
+        "DAILY multiformat campaign concept system"
+      ],
+      "metrics": {
+        "reach": "Verified conversions",
+        "engagement": "Verified return on spend"
+      }
+    },
+    "frames": {
+      "title": "FRAME BY FRAME / Details tell stories",
+      "client": "Concept product film series",
+      "category": "Video & production",
+      "brief": "Explore a visual direction for short product films that make the small details feel meaningful. The gallery shows static concept posters.",
+      "challenge": "Show the product’s value through attention and framing rather than a long list of features.",
+      "approach": "Choose one detail per moment. Use close composition, a restrained palette and a repeatable framing system to connect a series of short stories.",
+      "results": "A conceptual shot direction and poster series. Real production assets and verified viewing data should replace these examples before launch.",
+      "poster": "FRAME BY FRAME",
+      "caption": "EVERY DETAIL HAS SOMETHING TO SAY.",
+      "gallery": [
+        "FRAME BY FRAME product-film poster concept",
+        "FRAME BY FRAME detail-focused composition concept",
+        "FRAME BY FRAME visual series concept"
+      ],
+      "metrics": {
+        "reach": "Verified views",
+        "engagement": "Verified completion rate"
+      }
+    }
+  },
+  "teamItems": {
+    "strategy": {
+      "name": "Your strategy lead",
+      "role": "STRATEGY / DEMO ROLE",
+      "bio": "Turns business questions into a focused creative direction. Replace with the real person’s approved name and biography."
+    },
+    "design": {
+      "name": "Your design lead",
+      "role": "DESIGN / DEMO ROLE",
+      "bio": "Connects the visual details into a distinctive brand language. Replace with the real person’s approved name and biography."
+    },
+    "content": {
+      "name": "Your content lead",
+      "role": "CONTENT / DEMO ROLE",
+      "bio": "Finds the words, stories and rhythms that fit your brand. Replace with the real person’s approved name and biography."
+    }
+  },
+  "testimonialItems": {
+    "identity": {
+      "quote": "“The real difference was feeling understood from the first conversation. Every detail began telling the same story.”",
+      "name": "Partner name to be added",
+      "role": "ILLUSTRATIVE QUOTE / BRAND IDENTITY"
+    },
+    "content": {
+      "quote": "“We finally knew what we wanted to say, who we were speaking to and why. The content had a direction beyond simply posting.”",
+      "name": "Partner name to be added",
+      "role": "ILLUSTRATIVE QUOTE / SOCIAL CONTENT"
+    },
+    "partnership": {
+      "quote": "“Clear thinking, thoughtful details and space for our perspective. It felt like building the idea with one team.”",
+      "name": "Partner name to be added",
+      "role": "ILLUSTRATIVE QUOTE / CREATIVE PARTNERSHIP"
+    }
+  },
+  "faqItems": {
+    "start": {
+      "q": "What do I need before we start?",
+      "a": "A little context is enough: what your business does, who you want to reach and what you want to change. Share any existing materials and we’ll help turn that into a useful brief."
+    },
+    "scope": {
+      "q": "Can I book one service or a connected package?",
+      "a": "Both. We can focus on one specific need or connect several services around a larger goal. The scope, deliverables and responsibilities are agreed before the work begins."
+    },
+    "timeline": {
+      "q": "How long does a project take?",
+      "a": "It depends on the scope, the number of deliverables and how quickly feedback is available. We propose a realistic schedule after understanding the brief rather than promising a fixed timeline before we have the details."
+    },
+    "existing": {
+      "q": "Can you work with our existing identity?",
+      "a": "Yes. We first understand what is already working, then develop content or applications that stay true to your guidelines. If the identity itself needs attention, we’ll explain why before suggesting a separate scope."
+    },
+    "ads": {
+      "q": "Is advertising spend included in creative fees?",
+      "a": "Advertising spend and creative or management fees are scoped separately. Before launch, we agree the objective, budget and reporting approach. No result is guaranteed simply by running a campaign."
+    },
+    "remote": {
+      "q": "Can we work together remotely?",
+      "a": "Yes. Clear briefs, planned check-ins and organized feedback make remote collaboration straightforward. We agree the tools and communication rhythm that suit both teams."
+    }
+  },
+  "postItems": {
+    "brand-before-logo": {
+      "title": "Your brand starts before the logo.",
+      "excerpt": "Before choosing a color or sketching a symbol, decide what people should understand about your business.",
+      "category": "BRAND THINKING",
+      "body": [
+        {
+          "heading": "Start with a useful question.",
+          "text": "What should someone understand after meeting your business for the first time? A logo can help them remember the answer, but it cannot decide the answer for you. Start with the audience, the problem you solve and the reason your approach deserves attention."
+        },
+        {
+          "heading": "Choose a clear position.",
+          "text": "Write one simple sentence about who you help and what makes the experience valuable. Avoid a list of every good quality a company could claim. The more focused the position, the easier it becomes to choose the right tone, imagery and visual details."
+        },
+        {
+          "heading": "Build a system, not a souvenir.",
+          "text": "A good identity works beyond the presentation page. It should survive a small social icon, a bilingual headline, a product label and a website button. Test the everyday applications early. They reveal whether the idea is flexible or only looks good in one carefully arranged mockup."
+        },
+        {
+          "heading": "Give the identity a job.",
+          "text": "The next time you review a design, ask what it helps the audience understand. That question creates a more useful discussion than whether everyone likes the same shade of blue. The best identity is the one that gives your brand a clear and consistent way to show up."
+        }
+      ]
+    },
+    "content-with-a-purpose": {
+      "title": "Content is not filler. Give every post a job.",
+      "excerpt": "A calendar full of posts is not the same as a content direction. Start with the audience’s question, then decide the format.",
+      "category": "CONTENT & SOCIAL",
+      "body": [
+        {
+          "heading": "A post needs a reason to exist.",
+          "text": "Publishing regularly helps a brand stay present, but presence alone is not a strategy. Before adding a post to the calendar, decide what it is there to do: answer a question, explain a benefit, show how something works or make the next step feel easier."
+        },
+        {
+          "heading": "Find the audience’s language.",
+          "text": "Look at the questions customers actually ask and the words they use to ask them. Those conversations are often a better starting point than a generic list of awareness days. Build a few useful content pillars around real needs, then give each pillar a recognizable role."
+        },
+        {
+          "heading": "Let the message choose the format.",
+          "text": "Some ideas need a single clear sentence. Others need a carousel, a demonstration or a short video. Choosing the format after the message keeps the design from becoming the goal. The visual should make the idea easier to understand, not make the audience work harder."
+        },
+        {
+          "heading": "Review more than the numbers.",
+          "text": "Measure the response in relation to the post’s purpose. Saves can suggest practical usefulness; relevant questions can reveal interest; clicks can help evaluate a next step. Numbers need context. Use what you learn to improve the next month, not simply to fill a report."
+        }
+      ]
+    },
+    "landing-page-that-connects": {
+      "title": "A landing page should make the next step obvious.",
+      "excerpt": "Clarity, confidence and one useful action matter more than adding another section to the page.",
+      "category": "WEB & DIGITAL",
+      "body": [
+        {
+          "heading": "Continue the conversation.",
+          "text": "A visitor arrives with an expectation, often shaped by an ad, a social post or a recommendation. The first screen should make it clear they are in the right place. Use the same promise and language that brought them there, then explain why it matters."
+        },
+        {
+          "heading": "Make one action feel easy.",
+          "text": "A focused page does not ask every visitor to do five different things. Choose the action that makes sense for the offer, such as sending a project brief or booking a call. Label the button with what happens next, and explain any details that might make someone hesitate."
+        },
+        {
+          "heading": "Use evidence you can stand behind.",
+          "text": "Show approved work, relevant details and real testimonials where they help someone decide. If an example is conceptual, say so. An honest page with clear limits builds more trust than a collection of impressive numbers without a source."
+        },
+        {
+          "heading": "Check the experience on a real phone.",
+          "text": "Read the headline at a narrow width, open the menu with a keyboard and try the form. Make sure the page loads quickly, the text stays readable and the error messages explain how to continue. Useful design is often the result of removing small obstacles."
+        }
+      ]
+    }
+  }
+}

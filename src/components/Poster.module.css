@@ -1,0 +1,263 @@
+.poster,
+.image {
+  width: 100%;
+  aspect-ratio: 0.93;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  isolation: isolate;
+  object-fit: cover;
+}
+.content {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  direction: ltr;
+}
+.topline {
+  position: absolute;
+  inset: 22px 25px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 8px;
+  letter-spacing: 0.15em;
+  font-family: var(--font-body);
+  z-index: 2;
+}
+.headline {
+  position: absolute;
+  inset: 30% 24px auto;
+  font-family: var(--font-heading);
+  font-size: clamp(35px, 5vw, 76px);
+  line-height: 0.95;
+  letter-spacing: -0.07em;
+  font-weight: 400;
+  white-space: pre-line;
+  z-index: 2;
+  overflow-wrap: anywhere;
+}
+.caption {
+  position: absolute;
+  inset: auto 25px 86px;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  z-index: 2;
+  max-width: 75%;
+}
+.stamp {
+  position: absolute;
+  inset: auto 25px 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-block-start: 15px;
+  border-block-start: 1px solid color-mix(in srgb, var(--ink) 25%, transparent);
+  font-family: var(--font-body);
+  line-height: 1.3;
+  z-index: 3;
+}
+.stamp strong {
+  font-size: 19px;
+  letter-spacing: 0.18em;
+}
+.stamp > span {
+  font-size: 6px;
+  letter-spacing: 0.14em;
+  max-width: 70px;
+}
+.stamp > span:last-child {
+  margin-inline-start: auto;
+  font-size: 25px;
+}
+.orbit {
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  border: 1px solid var(--cyan);
+  border-radius: 50%;
+  inset: 10% -14% auto auto;
+  box-shadow:
+    inset 0 0 30px color-mix(in srgb, var(--cyan) 20%, transparent),
+    0 0 40px color-mix(in srgb, var(--cyan) 15%, transparent);
+  z-index: 0;
+}
+.orbit2 {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border: 1px solid var(--cyan);
+  border-radius: 50%;
+  inset: 23% -1% auto auto;
+}
+.geometry {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  inset: 0 auto auto 5%;
+  color: var(--cyan);
+  opacity: 0.45;
+  z-index: 0;
+}
+.fika {
+  background: linear-gradient(145deg, var(--electric), var(--navy));
+}
+.fika .headline {
+  font-size: clamp(65px, 9vw, 135px);
+  inset-block-start: 31%;
+  transform: rotate(-8deg);
+  font-family: var(--font-body);
+  font-weight: 800;
+  letter-spacing: -0.1em;
+}
+.fika .geometry {
+  display: none;
+}
+.fika .orbit {
+  width: 300px;
+  height: 300px;
+  inset: 15% -5% auto auto;
+  border-color: var(--ink);
+  opacity: 0.6;
+  transform: scaleX(0.75) rotate(-30deg);
+}
+.pulse {
+  background: radial-gradient(ellipse at 80% 70%, var(--electric), var(--bg2) 65%);
+}
+.pulse .headline {
+  font-size: clamp(50px, 7vw, 100px);
+  inset-block-start: 33%;
+}
+.pulse .geometry {
+  transform: rotate(90deg);
+  opacity: 0.3;
+}
+.motion {
+  background: var(--navy);
+}
+.motion .headline {
+  font-size: clamp(45px, 6vw, 85px);
+  inset-block-start: 28%;
+}
+.motion .orbit {
+  background: var(--electric);
+  border-color: var(--cyan);
+  box-shadow: 0 0 80px var(--electric);
+  inset: 5% -25% auto auto;
+  width: 350px;
+  height: 350px;
+}
+.motion .geometry {
+  transform: rotate(20deg);
+  opacity: 0.25;
+}
+.form {
+  background: var(--cyan);
+  color: var(--bg);
+}
+.form .geometry {
+  color: var(--navy);
+  opacity: 0.65;
+  inset-block-start: -8%;
+  transform: rotate(-15deg);
+}
+.form .orbit,
+.form .orbit2 {
+  display: none;
+}
+.form .headline {
+  font-size: clamp(60px, 7vw, 105px);
+  inset-block-start: 37%;
+}
+.daily {
+  background: linear-gradient(160deg, var(--bg), var(--electric));
+}
+.daily .headline {
+  font-size: clamp(40px, 5vw, 77px);
+  max-width: 80%;
+}
+.daily .geometry {
+  transform: rotate(15deg);
+  inset-inline-start: 15%;
+  inset-block-start: 15%;
+  opacity: 0.6;
+}
+.daily .orbit {
+  inset: auto -25% -35% auto;
+  width: 400px;
+  height: 400px;
+}
+.frames {
+  background: var(--electric);
+}
+.frames .headline {
+  font-size: clamp(38px, 5vw, 72px);
+  inset-block-start: 28%;
+}
+.frames .geometry {
+  opacity: 0.55;
+  transform: scale(1.4) rotate(-15deg);
+}
+.frames .orbit {
+  border-color: var(--ink);
+  inset: 20% 10%;
+  width: 80%;
+  height: 45%;
+  border-radius: 0;
+  transform: rotate(-12deg);
+}
+.frames .orbit2 {
+  display: none;
+}
+.detail {
+  aspect-ratio: 1.5;
+}
+:global([lang='ar']) .headline {
+  font-family: var(--font-ar);
+  font-weight: 700;
+  line-height: 1.2;
+}
+:global([lang='ar']) .stamp strong {
+  letter-spacing: 0.18em !important;
+}
+:global([lang='ar']) .stamp > span {
+  letter-spacing: 0.14em !important;
+}
+@media (max-width: 600px) {
+  .topline {
+    inset: 18px 20px auto;
+    font-size: 7px;
+  }
+  .stamp {
+    inset-inline: 20px;
+    inset-block-end: 18px;
+  }
+  .headline {
+    font-size: 58px;
+  }
+  .fika .headline {
+    font-size: 110px;
+  }
+  .pulse .headline {
+    font-size: 75px;
+  }
+  .motion .headline,
+  .daily .headline,
+  .frames .headline {
+    font-size: 60px;
+  }
+  .form .headline {
+    font-size: 90px;
+  }
+  .caption {
+    inset-inline: 20px;
+    inset-block-end: 77px;
+    font-size: 8px;
+  }
+  .detail {
+    aspect-ratio: 0.93;
+  }
+}

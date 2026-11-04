@@ -1,0 +1,49 @@
+{
+  "name": "blue-creative-partner",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB -c blue,cyan \"node --watch server/server.js\" \"vite --host 0.0.0.0 --port 5173\"",
+    "build": "vite build && node scripts/generate-seo.mjs",
+    "start": "NODE_ENV=production node server/server.js",
+    "preview": "vite preview --host 0.0.0.0 --port 4173",
+    "lint": "eslint .",
+    "test": "node --test server/*.test.js",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^7.0.2",
+    "compression": "^1.8.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "framer-motion": "^12.0.0",
+    "helmet": "^8.0.0",
+    "i18next": "^25.0.0",
+    "nodemailer": "^10.3.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-hook-form": "^7.54.2",
+    "react-i18next": "^15.7.0",
+    "react-router-dom": "^6.30.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.20.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "globals": "^15.15.0",
+    "prettier": "^3.5.0",
+    "supertest": "^7.0.0",
+    "vite": "^6.1.0"
+  }
+}

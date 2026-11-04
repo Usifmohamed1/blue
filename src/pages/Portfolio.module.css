@@ -1,0 +1,923 @@
+.pageHeader,
+.caseHeader {
+  position: relative;
+  overflow: hidden;
+  padding-block: clamp(4rem, 9vw, 8rem) 3.3rem;
+  background: radial-gradient(
+    ellipse at 90% 0%,
+    color-mix(in srgb, var(--electric) 24%, transparent),
+    transparent 58%
+  );
+}
+.eyebrow {
+  margin-block: 0 1.4rem;
+  color: var(--cyan);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.pageTitle,
+.caseTitle {
+  max-width: 68rem;
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-heading);
+  font-size: clamp(3.6rem, 8.5vw, 8rem);
+  line-height: 1.03;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+.pageDescription {
+  max-width: 40rem;
+  margin-block: 1.8rem 0;
+  color: var(--muted);
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  line-height: 1.9;
+}
+.workSection {
+  padding-block: 1rem 6.5rem;
+}
+.workToolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-block-end: 1.8rem;
+  border-block-end: 1px solid var(--line);
+}
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+.filters button {
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  color: var(--muted);
+  background: transparent;
+  padding: 0.65rem 1.15rem;
+  font-family: inherit;
+  font-size: 0.73rem;
+  font-weight: 700;
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    background 0.2s,
+    box-shadow 0.2s;
+}
+.filters button:hover {
+  color: var(--ink);
+  border-color: var(--cyan);
+}
+.filters button[aria-pressed='true'] {
+  color: var(--ink);
+  background: var(--electric);
+  border-color: var(--electric);
+  box-shadow: 0 0 25px color-mix(in srgb, var(--electric) 23%, transparent);
+}
+.searchField {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex: 0 1 16rem;
+  min-width: 0;
+  border: 1px solid color-mix(in srgb, var(--muted) 65%, transparent);
+  border-radius: 0.45rem;
+  padding: 0.65rem 0.9rem;
+  background: var(--bg2);
+}
+.searchField > svg {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  color: var(--cyan);
+}
+.searchField input {
+  min-width: 0;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  outline: 0;
+  color: var(--ink);
+  background: transparent;
+  font: inherit;
+  font-size: 0.75rem;
+}
+.searchField input::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+.searchField:focus-within {
+  outline: 2px solid var(--cyan);
+  outline-offset: 4px;
+}
+.searchField input:focus-visible {
+  outline: 0;
+}
+.resultCount {
+  margin-block: 1rem 1.9rem;
+  color: var(--muted);
+  font-size: 0.68rem;
+}
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem 1.7rem;
+}
+.projectCard {
+  min-width: 0;
+}
+.projectLink {
+  display: block;
+}
+.posterFrame {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--bg2);
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+.posterFrame > * {
+  transition: transform 0.5s;
+}
+.projectLink:hover .posterFrame {
+  border-color: color-mix(in srgb, var(--cyan) 65%, transparent);
+  box-shadow: 0 0 40px color-mix(in srgb, var(--electric) 12%, transparent);
+}
+.projectLink:hover .posterFrame > * {
+  transform: scale(1.035);
+}
+.projectCaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding-block-start: 1.1rem;
+}
+.projectCaption p {
+  margin-block: 0 0.4rem;
+  color: var(--cyan);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.projectCaption h2 {
+  font-size: clamp(1.05rem, 1.8vw, 1.4rem);
+  line-height: 1.5;
+  font-weight: 700;
+}
+.cardArrow {
+  display: grid;
+  place-items: center;
+  width: 2.45rem;
+  height: 2.45rem;
+  flex-shrink: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--ink);
+  transition:
+    color 0.2s,
+    border-color 0.2s,
+    background 0.2s;
+}
+.cardArrow svg {
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(-35deg);
+}
+.projectLink:hover .cardArrow {
+  color: var(--bg);
+  background: var(--cyan);
+  border-color: var(--cyan);
+}
+.conceptNote {
+  display: flex;
+  align-items: start;
+  gap: 0.6rem;
+  max-width: 49rem;
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.9;
+  margin-block-start: 2.7rem;
+}
+.conceptNote > svg {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  margin-block-start: 0.15rem;
+}
+.emptyState {
+  display: grid;
+  justify-items: center;
+  gap: 1.2rem;
+  padding-block: 5rem;
+  text-align: center;
+  color: var(--muted);
+  border: 1px dashed var(--line);
+  border-radius: 0.6rem;
+}
+.emptyState svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--cyan);
+}
+.emptyState p {
+  font-size: 0.9rem;
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  margin-block-end: 2.7rem;
+}
+.backLink:hover {
+  color: var(--cyan);
+}
+.backLink svg {
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(180deg);
+}
+.caseMeta {
+  display: flex;
+  gap: 0.7rem 1.5rem;
+  flex-wrap: wrap;
+  color: var(--cyan);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-block-end: 1rem;
+}
+.caseMeta span + span {
+  color: var(--muted);
+}
+.caseTitle {
+  max-width: 72rem;
+  font-size: clamp(3rem, 6.5vw, 6.5rem);
+  line-height: 1.12;
+}
+.caseSubtitle {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-block-start: 1.4rem;
+  max-width: 40rem;
+  line-height: 1.8;
+}
+.caseHero {
+  max-width: 100%;
+  overflow: hidden;
+  margin-block-start: 3rem;
+  border: 1px solid var(--line);
+  border-radius: 0.6rem;
+}
+.caseHero > * {
+  aspect-ratio: 2.05;
+  min-height: 25rem;
+}
+.caseBody {
+  padding-block: 2rem 6rem;
+}
+.briefGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 4rem;
+  border-block-end: 1px solid var(--line);
+  padding-block: 2rem 3.5rem;
+}
+.briefGrid h2 {
+  max-width: 24rem;
+  font-size: clamp(1.6rem, 3.5vw, 2.7rem);
+  line-height: 1.4;
+}
+.briefText {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 2;
+}
+.storyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem;
+  padding-block: 3.5rem;
+}
+.storyNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  color: var(--cyan);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  font-size: 0.65rem;
+  margin-block-end: 1.5rem;
+}
+.storyCard h2 {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-block-end: 0.8rem;
+}
+.storyCard p {
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.95;
+}
+.metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 2.5rem;
+  border: 1px solid var(--line);
+  border-radius: 0.55rem;
+  background: linear-gradient(
+    120deg,
+    var(--bg2),
+    color-mix(in srgb, var(--electric) 10%, var(--bg))
+  );
+}
+.metrics > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.metrics strong {
+  font-size: 2.8rem;
+  color: var(--cyan);
+  font-family: var(--font-heading);
+  line-height: 1;
+}
+.metrics span {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+.metrics > p {
+  display: flex;
+  align-items: start;
+  gap: 0.55rem;
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.9;
+}
+.metrics > p svg {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  margin-block-start: 0.1rem;
+  color: var(--cyan);
+}
+.galleryHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 4.5rem 1.5rem;
+}
+.galleryHeading .eyebrow {
+  margin: 0;
+}
+.galleryHeading > span {
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.galleryButton {
+  position: relative;
+  display: block;
+  padding: 0;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--bg2);
+  text-align: start;
+}
+.galleryButton:first-child {
+  grid-column: 1 / -1;
+}
+.galleryButton > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1.2;
+}
+.galleryButton:first-child > img {
+  aspect-ratio: 2;
+}
+.generatedGallery {
+  position: relative;
+  overflow: hidden;
+}
+.generatedGallery > *:first-child {
+  aspect-ratio: 1.2;
+}
+.galleryButton:first-child .generatedGallery > *:first-child {
+  aspect-ratio: 2;
+}
+.galleryVariant1 > *:first-child {
+  transform: none;
+}
+.galleryVariant2 > *:first-child {
+  transform: none;
+}
+.gallerySerial {
+  position: absolute;
+  z-index: 2;
+  inset-block-end: 1.2rem;
+  inset-inline-start: 1.2rem;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  color: var(--ink);
+  font-size: 0.65rem;
+  border: 1px solid color-mix(in srgb, var(--ink) 40%, transparent);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--bg) 70%, transparent);
+}
+.expandIcon {
+  position: absolute;
+  inset-inline-end: 1rem;
+  inset-block-end: 1rem;
+  display: grid;
+  place-items: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  color: var(--ink);
+  border: 1px solid color-mix(in srgb, var(--ink) 40%, transparent);
+  background: color-mix(in srgb, var(--bg) 75%, transparent);
+  border-radius: 50%;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.expandIcon svg {
+  width: 1rem;
+  height: 1rem;
+}
+.galleryButton:hover .expandIcon {
+  color: var(--bg);
+  background: var(--cyan);
+}
+.projectPagination {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-block: 1px solid var(--line);
+  margin-block-start: 4rem;
+}
+.projectPagination > a {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding-block: 2rem;
+  min-width: 0;
+}
+.projectPagination > a:last-child {
+  justify-content: flex-end;
+  text-align: end;
+  border-inline-start: 1px solid var(--line);
+  padding-inline-start: 1.5rem;
+}
+.projectPagination > a:first-child {
+  padding-inline-end: 1.5rem;
+}
+.projectPagination small {
+  display: block;
+  color: var(--cyan);
+  font-size: 0.65rem;
+  margin-block-end: 0.45rem;
+}
+.projectPagination strong {
+  display: block;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.paginationArrow {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 2.6rem;
+  height: 2.6rem;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+.paginationArrow svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.projectPagination a:first-child .paginationArrow {
+  transform: rotate(180deg);
+}
+.projectPagination a:hover .paginationArrow {
+  color: var(--cyan);
+  border-color: var(--cyan);
+}
+.lightbox {
+  width: min(1000px, calc(100% - 2rem));
+  max-height: 93dvh;
+  margin: auto;
+  padding: 0;
+  border: 1px solid color-mix(in srgb, var(--cyan) 45%, transparent);
+  border-radius: 0.65rem;
+  color: var(--ink);
+  background: var(--bg);
+  overflow-y: auto;
+  box-shadow: 0 0 90px color-mix(in srgb, var(--electric) 15%, transparent);
+}
+.lightbox::backdrop {
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  backdrop-filter: blur(12px);
+}
+.lightboxClose {
+  position: absolute;
+  z-index: 4;
+  inset-block-start: 0.8rem;
+  inset-inline-end: 0.8rem;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 1px solid color-mix(in srgb, var(--ink) 45%, transparent);
+  border-radius: 50%;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+}
+.lightboxClose svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.lightboxVisual {
+  overflow: hidden;
+}
+.lightboxVisual > img {
+  display: block;
+  width: 100%;
+  max-height: 76dvh;
+  object-fit: contain;
+}
+.lightboxVisual .generatedGallery > *:first-child {
+  aspect-ratio: 1.6;
+  min-height: 15rem;
+}
+.lightboxControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 1rem;
+  border-block-start: 1px solid var(--line);
+}
+.lightboxControls > button {
+  display: grid;
+  place-items: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 1px solid color-mix(in srgb, var(--muted) 65%, transparent);
+  border-radius: 50%;
+  color: var(--ink);
+  background: transparent;
+}
+.lightboxControls > button svg {
+  width: 1rem;
+  height: 1rem;
+}
+.lightboxControls > p {
+  min-width: 4rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+.lightboxPrevious svg {
+  transform: rotate(180deg);
+}
+.lightboxControls > button:hover,
+.lightboxClose:hover {
+  color: var(--cyan);
+  border-color: var(--cyan);
+}
+.missing {
+  min-height: 55vh;
+  display: grid;
+  align-items: center;
+  padding-block: 5rem;
+}
+.missing h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 6vw, 6rem);
+  line-height: 1.1;
+}
+.missing p {
+  color: var(--muted);
+  margin-block: 1.5rem 2rem;
+  max-width: 40rem;
+}
+:global([dir='rtl']) .cardArrow svg {
+  transform: rotate(-145deg);
+}
+:global([dir='rtl']) .backLink svg {
+  transform: none;
+}
+:global([dir='rtl']) .projectPagination a:first-child .paginationArrow {
+  transform: none;
+}
+:global([dir='rtl']) .projectPagination a:last-child .paginationArrow {
+  transform: rotate(180deg);
+}
+:global([dir='rtl']) .lightboxPrevious svg {
+  transform: none;
+}
+:global([dir='rtl']) .lightboxNext svg {
+  transform: rotate(180deg);
+}
+:global([lang='ar']) .pageTitle,
+:global([lang='ar']) .caseTitle,
+:global([lang='ar']) .missing h1 {
+  font-family: var(--font-ar);
+  letter-spacing: 0;
+  line-height: 1.35;
+}
+:global([lang='ar']) .eyebrow,
+:global([lang='ar']) .caseMeta,
+:global([lang='ar']) .projectCaption p {
+  letter-spacing: 0;
+}
+@media (max-width: 900px) {
+  .workToolbar {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .searchField {
+    flex-basis: auto;
+    max-width: 24rem;
+  }
+  .projectGrid {
+    gap: 2.5rem 1.3rem;
+  }
+  .caseHero > * {
+    min-height: 18rem;
+  }
+  .briefGrid {
+    gap: 2.5rem;
+  }
+  .storyGrid {
+    gap: 1.7rem;
+  }
+  .metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .metrics > p {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 600px) {
+  .pageHeader,
+  .caseHeader {
+    padding-block: 3.8rem 2.2rem;
+  }
+  .pageTitle {
+    font-size: clamp(3rem, 13vw, 5rem);
+  }
+  .pageDescription {
+    font-size: 0.9rem;
+    margin-block-start: 1.3rem;
+  }
+  .eyebrow {
+    font-size: 0.65rem;
+    margin-block-end: 1.1rem;
+  }
+  .workSection {
+    padding-block: 0.5rem 4rem;
+  }
+  .filters {
+    gap: 0.4rem;
+  }
+  .filters button {
+    padding: 0.6rem 0.85rem;
+    font-size: 0.66rem;
+  }
+  .searchField {
+    max-width: none;
+    padding-block: 0.75rem;
+  }
+  .searchField input {
+    font-size: 0.8rem;
+  }
+  .resultCount {
+    font-size: 0.65rem;
+    margin-block: 1rem 1.5rem;
+  }
+  .projectGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .projectCaption {
+    gap: 1rem;
+  }
+  .projectCaption h2 {
+    font-size: 1.1rem;
+  }
+  .projectCaption p {
+    font-size: 0.6rem;
+  }
+  .conceptNote {
+    font-size: 0.65rem;
+  }
+  .caseTitle {
+    font-size: 2.8rem;
+  }
+  .backLink {
+    font-size: 0.7rem;
+    margin-block-end: 2rem;
+  }
+  .caseMeta {
+    font-size: 0.6rem;
+  }
+  .caseSubtitle {
+    font-size: 0.85rem;
+    margin-block-start: 1rem;
+  }
+  .caseHero {
+    margin-block-start: 2rem;
+  }
+  .caseHero > * {
+    aspect-ratio: 1;
+    min-height: 0;
+  }
+  .caseBody {
+    padding-block: 0.8rem 4rem;
+  }
+  .briefGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-block: 1.5rem 2.5rem;
+  }
+  .briefGrid h2 {
+    font-size: 1.9rem;
+  }
+  .briefText {
+    font-size: 0.9rem;
+  }
+  .storyGrid {
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+    padding-block: 2.5rem;
+  }
+  .storyNumber {
+    margin-block-end: 1rem;
+  }
+  .storyCard h2 {
+    font-size: 1.25rem;
+  }
+  .storyCard p {
+    font-size: 0.85rem;
+  }
+  .metrics {
+    gap: 1.8rem 1rem;
+    padding: 1.5rem;
+  }
+  .metrics > div {
+    align-items: start;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .metrics strong {
+    font-size: 2.4rem;
+  }
+  .metrics span {
+    font-size: 0.7rem;
+  }
+  .metrics > p {
+    font-size: 0.65rem;
+  }
+  .galleryHeading {
+    margin-block: 3rem 1.2rem;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+  .galleryButton:first-child .generatedGallery > *:first-child {
+    aspect-ratio: 1.2;
+  }
+  .generatedGallery > *:first-child {
+    aspect-ratio: 1.2;
+  }
+  .gallerySerial {
+    width: 1.6rem;
+    height: 1.6rem;
+    inset-inline-start: 0.6rem;
+    inset-block-end: 0.6rem;
+    font-size: 0.55rem;
+  }
+  .expandIcon {
+    width: 1.8rem;
+    height: 1.8rem;
+    inset-inline-end: 0.6rem;
+    inset-block-end: 0.6rem;
+  }
+  .expandIcon svg {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .projectPagination {
+    margin-block-start: 2.5rem;
+  }
+  .projectPagination > a {
+    gap: 0.6rem;
+    padding-block: 1.3rem;
+  }
+  .projectPagination > a:first-child {
+    padding-inline-end: 0.8rem;
+  }
+  .projectPagination > a:last-child {
+    padding-inline-start: 0.8rem;
+  }
+  .projectPagination small {
+    font-size: 0.58rem;
+  }
+  .projectPagination strong {
+    font-size: 0.75rem;
+  }
+  .paginationArrow {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .paginationArrow svg {
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+  .lightbox {
+    width: calc(100% - 1.2rem);
+  }
+  .lightboxVisual .generatedGallery > *:first-child {
+    aspect-ratio: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .filters button,
+  .posterFrame,
+  .posterFrame > *,
+  .cardArrow,
+  .expandIcon,
+  .paginationArrow {
+    transition: none;
+  }
+  .projectLink:hover .posterFrame > * {
+    transform: none;
+  }
+}
+
+.projectPagination .paginationArrow svg {
+  transform: none;
+}
+
+.pageTitle {
+  white-space: pre-line;
+}
+
+.galleryVariant1::after {
+  content: '';
+  position: absolute;
+  inset: 8%;
+  border: 1px solid color-mix(in srgb, var(--cyan) 40%, transparent);
+  pointer-events: none;
+}
+.galleryVariant2::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+    90deg,
+    transparent 49.9%,
+    color-mix(in srgb, var(--ink) 12%, transparent) 50%,
+    transparent 50.1%
+  );
+  pointer-events: none;
+}

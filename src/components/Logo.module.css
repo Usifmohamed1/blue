@@ -1,0 +1,70 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  flex-shrink: 0;
+  direction: ltr;
+}
+.logo svg {
+  width: 29px;
+  height: 54px;
+  flex-shrink: 0;
+}
+.wordmark {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: var(--font-body);
+  line-height: 1;
+}
+.wordmark strong {
+  font-size: 26px;
+  letter-spacing: 0.22em;
+}
+.wordmark > span {
+  font-size: 6px;
+  letter-spacing: 0.19em;
+}
+.full {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.full svg {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  filter: drop-shadow(0 0 45px color-mix(in srgb, var(--cyan) 14%, transparent));
+}
+.icon svg {
+  height: 48px;
+  width: 26px;
+}
+:global([lang='ar']) .wordmark strong {
+  letter-spacing: 0.22em !important;
+}
+:global([lang='ar']) .wordmark > span {
+  letter-spacing: 0.19em !important;
+}
+.horizontal svg text {
+  display: none;
+}
+@media (max-width: 600px) {
+  .logo svg {
+    width: 23px;
+    height: 43px;
+  }
+  .wordmark strong {
+    font-size: 22px;
+  }
+  .wordmark > span {
+    font-size: 5px;
+  }
+  .logo {
+    gap: 9px;
+  }
+  .full svg {
+    height: 100%;
+    width: auto;
+  }
+}
